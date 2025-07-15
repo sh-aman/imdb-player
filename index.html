@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IMDb Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="app">
+    <h1 id="title">Loading...</h1>
+    <div id="controls" class="hidden">
+      <select id="seasonSelect"></select>
+      <select id="episodeSelect"></select>
+      <div class="nav-buttons">
+        <button id="prev">⏮️ Prev</button>
+        <button id="next">⏭️ Next</button>
+      </div>
+    </div>
+    <div class="video-container">
+      <iframe id="player" allowfullscreen></iframe>
+    </div>
+  </main>
 
+  <script src="player.js"></script>
+</body>
+</html>
